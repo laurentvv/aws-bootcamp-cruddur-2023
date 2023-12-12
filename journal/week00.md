@@ -135,3 +135,12 @@ aws budgets create-budget \
     --budget file://aws/json/budget.json \
     --notifications-with-subscribers file://aws/json/budget-notifications-with-subscribers.json
 ```
+
+## MY HOMEWORK
+I do everything without block.
+
+Need more info between gitpod and ghitub interact (authorize write repo).
+Not understand how validate my homeworks.
+
+Lucid Chart :
+https://lucid.app/lucidchart/3d810c4c-3512-4b1a-a8dc-6e13edacab9f/edit?viewport_loc=-400%2C-23%2C2714%2C1342%2C0_0&invitationId=inv_5525c9b7-7fe2-40fe-8147-57820db100d5

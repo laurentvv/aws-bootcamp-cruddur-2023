@@ -1,5 +1,85 @@
 # Week 0 — Billing and Architecture
 
+---
+
+## MY HOMEWORK
+I do everything without block.
+
+Fork Ghitub Omenking to my repo
+Config Gitpod to connect my Ghitub.
+Config MFA Ghitub
+Add write permissions to Gitpod to write in my repository
+Insall AWS with .gitpod.yml and windows too.
+
+![AWS working copy](../assets/aws_cli.png)
+
+### Create a budget
+I created my own budget for 1$.
+
+![AWS Budget](../assets/budget_aws.png)
+
+### Lucid Chart :
+[Lucide Share Link](https://lucid.app/lucidchart/3d810c4c-3512-4b1a-a8dc-6e13edacab9f/edit?viewport_loc=-400%2C-23%2C2714%2C1342%2C0_0&invitationId=inv_5525c9b7-7fe2-40fe-8147-57820db100d5)
+
+
+#### To Improve
+Need more info between Gitpod and Ghitub interact (authorize write repo).
+
+### Exemple de markdown
+#### Une liste
+- c'est
+- une
+- liste
+- super
+
+1. order
+2. list
+3. cool
+
+#### TABLE
+| My | Cool | Table |
+| ---| ---| --- |
+| 1   | 2 | 3 |
+| 4   | 5 | 6 |
+
+#### Code exemple
+
+```json
+{
+    "BudgetLimit": {
+        "Amount": "1",
+        "Unit": "USD"
+    },
+    "BudgetName": "Example Tag Budget",
+    "BudgetType": "COST",
+    "CostFilters": {
+        "TagKeyValue": [
+            "user:Key$value1",
+            "user:Key$value2"
+        ]
+    },
+    "CostTypes": {
+        "IncludeCredit": true,
+        "IncludeDiscount": true,
+        "IncludeOtherSubscription": true,
+        "IncludeRecurring": true,
+        "IncludeRefund": true,
+        "IncludeSubscription": true,
+        "IncludeSupport": true,
+        "IncludeTax": true,
+        "IncludeUpfront": true,
+        "UseBlended": false
+    },
+    "TimePeriod": {
+        "Start": 1477958399,
+        "End": 3706473600
+    },
+    "TimeUnit": "MONTHLY"
+}
+```
+
+---
+
 ## Getting the AWS CLI Working
 
 We'll be using the AWS CLI often in this bootcamp,
@@ -136,10 +216,3 @@ aws budgets create-budget \
     --notifications-with-subscribers file://aws/json/budget-notifications-with-subscribers.json
 ```
 
-## MY HOMEWORK
-I do everything without block.
-
-Need more info between Gitpod and Ghitub interact (authorize write repo).
-
-Lucid Chart :
-https://lucid.app/lucidchart/3d810c4c-3512-4b1a-a8dc-6e13edacab9f/edit?viewport_loc=-400%2C-23%2C2714%2C1342%2C0_0&invitationId=inv_5525c9b7-7fe2-40fe-8147-57820db100d5

@@ -20,6 +20,7 @@ https://code.visualstudio.com/docs/containers/overview
 
 ```sh
 cd backend-flask
+pip3 install -r requirements.txt
 export FRONTEND_URL="*"
 export BACKEND_URL="*"
 python3 -m flask run --host=0.0.0.0 --port=4567

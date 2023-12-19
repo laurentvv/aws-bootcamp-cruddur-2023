@@ -73,10 +73,14 @@ docker run --rm -p 4567:4567 -it  -e FRONTEND_URL -e BACKEND_URL backend-flask
 unset FRONTEND_URL="*"
 unset BACKEND_URL="*"
 ```
+RUN qui marche
+```sh
+docker run --rm -p 4567:4567 -it -e FRONTEND_URL='*' -e BACKEND_URL='*' backend-flask
+```
 
 Run in background
 ```sh
-docker container run --rm -p 4567:4567 -d backend-flask
+docker container run --rm -p 4567:4567 -e FRONTEND_URL='*' -e BACKEND_URL='*'  -d backend-flask
 ```
 
 Return the container id into an Env Vat
@@ -152,7 +156,7 @@ FLASK_ENV=production PORT=8080 docker run -p 4567:4567 -it backend-flask
 
 We have to run NPM Install before building the container since it needs to copy the contents of node_modules
 
-```
+```sh
 cd frontend-react-js
 npm i
 ```
@@ -297,3 +301,6 @@ volumes:
   db:
     driver: local
 ```
+
+### Conversion docker run en fichier Docker compose
+[Conversion avec composerize.com](https://www.composerize.com/)
